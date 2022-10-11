@@ -1,9 +1,10 @@
 import React from 'react';
 
 const Static = () => {
+    
     return (
         <div>
-            <h1>Thi is static</h1>
+            <h1>hello</h1>
         </div>
     );
 };

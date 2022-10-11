@@ -5,7 +5,7 @@ const CartElement = ({topic}) => {
     let {name,logo,total,id} = topic
     let naviGate  = useNavigate()
     let handleRumman = (id)=>{
-        naviGate(`topic/${id}`)
+        naviGate(`../topic/${id}`)
     }
     return (
         <div className='relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl'>

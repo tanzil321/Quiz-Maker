@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import Static from './Static';
+import Quiz from './Quiz';
+
 
 const Topics = () => {
     let amarSawwa = useLoaderData();
@@ -8,7 +9,7 @@ const Topics = () => {
     return (
         <div>
             <h1>This is topic</h1>
-            {amarSawwa.data.questions.map(dar=><Static 
+            {amarSawwa.data.questions.map(dar=><Quiz
             dar = {dar}
             />)}
         </div>
