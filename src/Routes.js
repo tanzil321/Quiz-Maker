@@ -37,6 +37,13 @@ export const router = createBrowserRouter([
         }
       },
       {
+        path:'/topic/:idx',
+        element:<Topics/>,
+        loader:({params})=>{
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.idx}`)
+        }
+      },
+      {
         path:'static',
         element:<Static/>,
       },
