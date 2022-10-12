@@ -1,7 +1,6 @@
 import React from 'react';
 
-const QuizElement = () => {
-    
+const OptionSet = () => {
     return (
         <div>
             
@@ -9,4 +8,4 @@ const QuizElement = () => {
     );
 };
 
-export default QuizElement;
+export default OptionSet;

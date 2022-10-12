@@ -2,17 +2,18 @@ import React, { useContext } from 'react';
 import QueSet from './QueSet';
 import { RingContext } from './Topics';
 
-const Quiz = ({dar}) => {
-    let ProsNo = useContext(RingContext)
+const Quiz = ({dar,ind}) => {
+    
     return (
         <div>
-            <h2>{dar.question}</h2>
+            <p>{ind}</p>
+            <p className='text-center'>{dar.question}</p>
             <div>
             <ol className='border grid grid-cols-2 gap-4'>
             {
-                    ProsNo.data.questions.map(dar => <QueSet
+                    dar.options.map(que => <QueSet
                     key={dar.id}
-                    dar ={dar}
+                    que ={que}
                     />)
                 }
             </ol>
