@@ -36,8 +36,8 @@ const Quiz = ({dar}) => {
             <QueContext.Provider value={dar}>
             <ol className=' px-8  pb-8 py-2 mx-auto border grid grid-cols-2 gap-4'>
             {
-                options.map(que => <div className='rounded-lg bg-cyan-200 text-center px-8 py-6  '>
-                    <input type="radio" name="name" value={que} onClick={no}></input><span>{que}</span>
+                options.map(que => <div className='hover:bg-cyan-400 rounded-lg bg-cyan-200 text-center px-8 py-6  '>
+                    <input  type="radio" name="name" value={que} onClick={no}></input><span>{que}</span>
                 </div>)
             }
             <ToastContainer position='top-center' />
