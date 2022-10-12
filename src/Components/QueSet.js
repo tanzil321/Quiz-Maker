@@ -6,7 +6,7 @@ import { CardContext, RingContext } from './Topics';
 
 const QueSet = ({que}) => {
     let funG = useContext(QueContext)
-    console.log(funG);
+    console.log(funG.correctAnswer);
     let funD = useContext(CardContext)
     console.log(funD);
     let funf = (que)=>
